@@ -48,6 +48,10 @@ class MapFragment : SupportMapFragment(), OnMapReadyCallback, OnSuccessListener<
         if (p0 != null) {
             map.moveCamera(CameraUpdateFactory.newLatLngZoom(LatLng(p0.latitude,p0.longitude),15f))
             map.addMarker(MarkerOptions().position(LatLng(p0.latitude,p0.longitude)))
+            map.addMarker(MarkerOptions().position(LatLng(4.7563171,-74.1106713)))
+            map.addMarker(MarkerOptions().position(LatLng(4.7519623,-74.1094423)))
+            map.addMarker(MarkerOptions().position(LatLng(4.7517355,-74.1107927)))
+            map.addMarker(MarkerOptions().position(LatLng(4.7547748,-74.1127803)))
         }
     }
 }

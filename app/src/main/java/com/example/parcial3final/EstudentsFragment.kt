@@ -32,13 +32,13 @@ class EstudentsFragment : Fragment() {
         binding.countriesRecyclerView.layoutManager =  LinearLayoutManager(view?.getContext())
 
         var adapter = GroupieAdapter()
-        adapter.add(StudenItem("Juan","3134473"))
-        adapter.add(StudenItem("Sofia","123456675"))
-        adapter.add(StudenItem("Diana","123456675"))
+        adapter.add(StudenItem("Juan","3134473",4.7624622,-74.10321060000001))
+        adapter.add(StudenItem("Sofia","123456675",4.757958770882261,-74.09962149343849))
+        adapter.add(StudenItem("Diana","123456675",4.757958770882261,-74.09962149343849))
         binding.countriesRecyclerView.adapter = adapter
 
         //return binding.root
-        return inflater.inflate(R.layout.fragment_estudents, container, false)
+        return binding.root
     }
 
 
