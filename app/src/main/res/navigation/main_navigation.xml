@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/locationFragment">
+
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.example.parcial3final.LocationFragment"
+        android:label="Localización Fragment "
+        tools:layout="@layout/fragment_location" />
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.parcial3final.MapFragment"
+        android:label="Mapa"
+        tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/estudentsFragment"
+        android:name="com.example.parcial3final.EstudentsFragment"
+        android:label="Estudiantes"
+        tools:layout="@layout/fragment_estudents" />
+</navigation>
